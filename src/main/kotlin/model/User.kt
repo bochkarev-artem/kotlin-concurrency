@@ -11,5 +11,6 @@ data class User (
     val address: Address,
     val phone: String,
     val website: String,
-    val company: Company
+    val company: Company,
+    var posts: List<Post> = emptyList()
 )

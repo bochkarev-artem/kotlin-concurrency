@@ -1,0 +1,18 @@
+1. Articles, that i have read most recently, are related to coroutine bug in kotlinx.coroutines:
+https://medium.com/@elizarov/the-reason-to-avoid-globalscope-835337445abc#af54
+Refer to an issue with runBlockingTest for GlobalScope https://github.com/Kotlin/kotlinx.coroutines/issues/1204
+
+But apart from that there was a good articles series about Painless TDD, that i read:
+https://enterprisecraftsmanship.com/posts/test-induced-design-damage-or-why-tdd-is-so-painful/
+There are some interesting ideas, one of which is that tests shouldnt contain mocks at all.
+It helped me to see a new viewpoint on TDD approach, how it should be done properly,
+what pitfalls some of the developers fall into.
+
+2. There are 2 projects, that i worked on and am kind of proud about it.
+And the reason for that - for both of them i worked alone (https://github.com/bochkarev-artem/falcon)
+or almost alone (the project at my current position), doing all kind of aspects of web/software development, which includes:
+* conceptualizing
+* development (front- and backend logic)
+* deployment (CI, CD, containerizing, hosting)
+On current project i also work in small team and i am initiator and main responsible for code quality,
+mentoring other people on how to right conscious code and use helping tool for maintaining and automating code quality in the project

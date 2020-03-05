@@ -27,25 +27,4 @@ class ConcurrencyTest {
                     "qui aperiam non debitis possimus qui neque nisi nulla)])", user.toString()
         )
     }
-
-    @Test
-    fun testDelayInLaunch() = runBlockingTest {
-        val realStartTime = System.currentTimeMillis()
-        val virtualStartTime = currentTime
-
-        bar()
-//        val user = deferredUser.await()
-//        val posts = deferredPosts.await()
-//        user.posts = posts
-
-        println("${System.currentTimeMillis() - realStartTime} ms")  // ~ 11 ms
-        println("${currentTime - virtualStartTime} ms")              // 1000 ms
-    }
-
-    suspend fun bar() = coroutineScope {
-        launch {
-            val deferredUser = getUser(MockService, Json(JsonConfiguration.Stable))
-            val deferredPosts = getPosts(MockService, Json(JsonConfiguration.Stable))
-        }
-    }
 }
